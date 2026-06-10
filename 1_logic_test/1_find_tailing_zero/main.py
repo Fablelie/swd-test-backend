@@ -59,6 +59,7 @@ class Solution:
 
         return count
 
+# python 1_logic_test\1_find_tailing_zero\main.py
 sol = Solution()
 
 input = 7
