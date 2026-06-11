@@ -1,0 +1,69 @@
+[
+  {
+    "model": "apis.school",
+    "pk": 1,
+    "fields": {
+      "name": "โรงเรียนตัวอย่างวิทยา",
+      "abbreviation": "รว.",
+      "address": "123 ถนนสุขุมวิท กรุงเทพมหานคร"
+    }
+  },
+  {
+    "model": "apis.classroom",
+    "pk": 1,
+    "fields": {
+      "school": 1,
+      "grade": 1,
+      "section": 1
+    }
+  },
+  {
+    "model": "apis.classroom",
+    "pk": 2,
+    "fields": {
+      "school": 1,
+      "grade": 1,
+      "section": 2
+    }
+  },
+  {
+    "model": "apis.teacher",
+    "pk": 1,
+    "fields": {
+      "firstname": "สมศรี",
+      "lastname": "ดีเด่น",
+      "gender": "F",
+      "classrooms": [1, 2]
+    }
+  },
+  {
+    "model": "apis.teacher",
+    "pk": 2,
+    "fields": {
+      "firstname": "สมชาย",
+      "lastname": "สายสอน",
+      "gender": "M",
+      "classrooms": [1]
+    }
+  },
+  {
+    "model": "apis.student",
+    "pk": 1,
+    "fields": {
+      "firstname": "เด็กชายกิตติ",
+      "lastname": "เรียนดี",
+      "gender": "M",
+      "classroom": 1
+    }
+  },
+  {
+    "model": "apis.student",
+    "pk": 2,
+    "fields": {
+      "firstname": "เด็กหญิงนภา",
+      "lastname": "ใจใส",
+      "gender": "F",
+      "classroom": 2
+    }
+  }
+]
